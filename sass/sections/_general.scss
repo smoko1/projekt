@@ -1,0 +1,10 @@
+$boder-style: 1px solid #e3e3e3;
+.general-statistic {
+  padding-left: 150px;
+  border-bottom: $boder-style;
+  width: 100%;
+  background-color: #ffffff;
+  @media(max-width: 767px) {
+    display: none;
+  }
+}

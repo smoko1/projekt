@@ -4,7 +4,12 @@
 @import "mixins";
 @import "normalize";
 @import "grid";
+@import 'components/index';
+@import 'sections/index';
 
+* {
+  font-family: $default-font;
+}
 
 ///* Components */
 //import "components/form_field";
