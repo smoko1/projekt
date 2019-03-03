@@ -637,11 +637,14 @@ template {
 .general-statistic {
   padding-left: 10px;
   border-bottom: 1px solid #e3e3e3;
-  background-color: #ffffff;
+  background-color: #F5F5F3;
   text-align: left; }
 
-button {
-  background-color: #f58220; }
+main {
+  background-color: #F5F5F3; }
+
+links {
+  background-color: #F5F5F3; }
 
 table {
   border-collapse: collapse;
@@ -655,7 +658,7 @@ th, td {
   max-width: 100px;
   font-size: 15px; }
 
-tr:hover {
+tr.hover:hover {
   background-color: #f5f5f5; }
 
 table.glyphicon-hover .glyphicon {
@@ -669,8 +672,11 @@ table > tbody > tr > td > a {
   height: 10px;
   margin-left: 15px; }
 
+table > tbody > th {
+  max-width: 700px; }
+
 table {
-  max-width: 800px; }
+  max-width: 700px; }
 
 .link {
   color: #57829e; }
@@ -681,6 +687,56 @@ table > tbody > tr > td > .icon-links {
 .title-row {
   color: #9c9c9c;
   font-weight: bold; }
+
+container {
+  width: 100%;
+  max-width: 1600px; }
+
+.links-table {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 5px solid #f2f2f2;
+  margin-left: 208px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 20px; }
+  @media (max-width: 767px) {
+    .links-table {
+      margin-left: 70px; }
+      .links-table btn {
+        justify-content: center; }
+      .links-table h1 {
+        color: #9c9c9c; } }
+
+.links-title {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: left;
+  border: 5px solid #f2f2f2;
+  margin-left: 208px;
+  margin-top: 20px;
+  margin-bottom: -42px;
+  margin-right: 20px; }
+  .links-title > h1 {
+    color: #9c9c9c;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .links-title {
+      margin-left: 70px; } }
+
+.btn-table {
+  text-align: center;
+  justify-content: center; }
+
+.table-noborder {
+  border: 0px; }
 
 * {
   font-family: "Roboto", sans-serif; }
