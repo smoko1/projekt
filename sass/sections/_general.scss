@@ -1,60 +1,70 @@
 $boder-style: 1px solid #e3e3e3;
 .general-statistic {
-  padding-left: 10px;
   border-bottom: $boder-style;
   background-color: #F5F5F3;
   text-align: left;
 }
 main {
+  margin-bottom: 20px;
+}
+body {
   background-color: #F5F5F3;
 }
+
 links {
   background-color: #F5F5F3;
 }
+
 table {
   border-collapse: collapse;
   width: 100%;
+  max-width: 1000px;
 }
 
 th, td {
   padding: 8px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px #2d2a2a3d groove;
   height: 40px;
-  max-width: 100px;
+  max-width: 250px;
   font-size: 15px;
 }
+
 tr.hover:hover {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
 }
 
 table.glyphicon-hover .glyphicon {
   visibility: hidden;
 }
+
 table.glyphicon-hover tr:hover .glyphicon {
   visibility: visible;
 }
+
 table > tbody > tr > td > a {
   width: 15px;
   height: 10px;
   margin-left: 15px;
 }
+
 table > tbody > th {
-  max-width: 700px;
+  max-width: 1000px;
 }
-table {
-  max-width: 700px;
-}
-.link{
+
+.link {
   color: $link-color;
 }
+
 table > tbody > tr > td > .icon-links {
   color: $link-hover-color;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
 }
+
 .title-row {
   color: #9c9c9c;
   font-weight: bold;
@@ -62,26 +72,23 @@ table > tbody > tr > td > .icon-links {
 
 .container {
   width: 100%;
-  max-width: 1170px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
+
 .container-fluid {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .links-table {
   display: flex;
   background-color: white;
   flex-wrap: wrap;
   justify-content: center;
-  border: 5px solid #f2f2f2;
-  margin-left: 208px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-left: 205px;
   margin-right: 20px;
+  border-bottom: $boder-style;
   padding: 20px;
   @media(max-width: 767px) {
     margin-left: 70px;
@@ -93,31 +100,97 @@ table > tbody > tr > td > .icon-links {
     }
   }
 }
+
+.general-title {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 205px;
+  margin-top: 75px;
+  margin-right: 20px;
+  border-bottom: $boder-style;
+
+  > h1 {
+    color: #9c9c9c;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  @media(max-width: 767px) {
+    margin-left: 70px;
+  }
+}
+
 .links-title {
   display: flex;
   background-color: white;
   flex-wrap: wrap;
   justify-content: left;
-  border: 5px solid #f2f2f2;
-  margin-left: 208px;
+  margin-left: 205px;
   margin-top: 20px;
-  margin-bottom: 2px;
   margin-right: 20px;
-    > h1 {
-      color:#9c9c9c;
-      font-size: 20px;
-      padding-left: 5px;
-      padding-bottom: 5px;
-      text-transform: uppercase;
-    }
+  border-bottom: $boder-style;
+
+  > h1 {
+    color: #9c9c9c;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+
   @media(max-width: 767px) {
     margin-left: 70px;
-    }
+  }
 }
+
 .btn-table {
   text-align: center;
   justify-content: center;
 }
+
 .table-noborder {
   border: 0px;
 }
+
+.legends-div {
+  background-color: #F3F3F1;
+  border-radius: 3px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  padding: 14px 22px;
+  color: #ADADAD;
+  cursor: none;
+}
+.legend-div {
+  @include circle(14px);
+  display: inline-block;
+}
+
+.legend1 {
+  background: #5DBCD2;
+  margin-right: 5px;
+}
+.legend2 {
+  background: orange;
+  margin-right: 5px;
+}
+.legend3 {
+  background: #59B76B;
+  margin-right: 5px;
+}
+.legend3-div {
+  padding-top: 19px;
+  color: #57829e;
+  margin-left: 50px;
+}
+
+
+
