@@ -4,14 +4,12 @@ $boder-style: 1px solid #e3e3e3;
   background-color: #F5F5F3;
   text-align: left;
 }
+
 main {
   margin-bottom: 20px;
 }
-body {
-  background-color: #F5F5F3;
-}
 
-links {
+body {
   background-color: #F5F5F3;
 }
 
@@ -23,11 +21,11 @@ table {
 
 th, td {
   padding: 8px;
-  text-align: center;
   border-bottom: 1px #2d2a2a3d groove;
   height: 40px;
   max-width: 250px;
   font-size: 15px;
+
 }
 
 tr.hover:hover {
@@ -68,6 +66,25 @@ table > tbody > tr > td > .icon-links {
 .title-row {
   color: #9c9c9c;
   font-weight: bold;
+  text-align: center;
+}
+.title-row-left {
+color: #9c9c9c;
+font-weight: bold;
+text-align: left;
+}
+
+.chart {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 205px;
+  margin-right: 20px;
+  padding: 20px;
+  @media(max-width: 767px) {
+    margin-left: 70px;
+  }
 }
 
 .container {
@@ -81,7 +98,12 @@ table > tbody > tr > td > .icon-links {
   padding-right: 15px;
 }
 
-.links-table {
+.date-buttons {
+  padding-bottom: 30px;
+  border-bottom: $boder-style;
+}
+
+.general-date {
   display: flex;
   background-color: white;
   flex-wrap: wrap;
@@ -90,6 +112,62 @@ table > tbody > tr > td > .icon-links {
   margin-right: 20px;
   border-bottom: $boder-style;
   padding: 20px;
+
+  img {
+    max-width: 800px;
+    object-fit: cover;
+  }
+
+  @media(max-width: 767px) {
+    margin-left: 70px;
+    btn {
+      justify-content: center;
+    }
+    h1 {
+      color: #9c9c9c;
+    }
+    img {
+      max-width: 400px;
+      object-fit: cover;
+    }
+  }
+  @media(min-width: 769px) and (max-width: 992px) {
+    img {
+      max-width: 700px;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.general-table {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 205px;
+  margin-right: 20px;
+  padding: 20px;
+  @media(max-width: 767px) {
+    margin-left: 70px;
+    btn {
+      justify-content: center;
+    }
+    h1 {
+      color: #9c9c9c;
+    }
+  }
+}
+
+.links-table {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 205px;
+  margin-right: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
   @media(max-width: 767px) {
     margin-left: 70px;
     btn {
@@ -168,7 +246,9 @@ table > tbody > tr > td > .icon-links {
   padding: 14px 22px;
   color: #ADADAD;
   cursor: none;
+  display: inline-block;
 }
+
 .legend-div {
   @include circle(14px);
   display: inline-block;
@@ -178,19 +258,48 @@ table > tbody > tr > td > .icon-links {
   background: #5DBCD2;
   margin-right: 5px;
 }
+
 .legend2 {
   background: orange;
   margin-right: 5px;
 }
+
 .legend3 {
   background: #59B76B;
   margin-right: 5px;
+  display: inline-block;
 }
+
 .legend3-div {
   padding-top: 19px;
   color: #57829e;
   margin-left: 50px;
+  display: inline-block;
 }
 
+.titlechart {
 
+  background-color: white;
+  color: #9c9c9c;
+  font-weight: bold;
+}
 
+tr {
+  display: table-row;
+  text-align: left;
+}
+
+.td-table {
+  text-align: end;
+}
+
+.hover {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+.glyphicon-hover {
+  max-width: 800px;
+}

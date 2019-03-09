@@ -459,7 +459,8 @@ template {
   font-size: 16px;
   transform: translate(30px);
   margin-left: -20px;
-  z-index: 1; }
+  z-index: 1;
+  border: none; }
   .input-icon + .form-input, .input-icon + .date-period {
     padding-left: 34px;
     z-index: 0; }
@@ -645,9 +646,6 @@ main {
 body {
   background-color: #F5F5F3; }
 
-links {
-  background-color: #F5F5F3; }
-
 table {
   border-collapse: collapse;
   width: 100%;
@@ -655,7 +653,6 @@ table {
 
 th, td {
   padding: 8px;
-  text-align: center;
   border-bottom: 1px #2d2a2a3d groove;
   height: 40px;
   max-width: 250px;
@@ -690,7 +687,25 @@ table > tbody > tr > td > .icon-links {
 
 .title-row {
   color: #9c9c9c;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
+
+.title-row-left {
+  color: #9c9c9c;
+  font-weight: bold;
+  text-align: left; }
+
+.chart {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 205px;
+  margin-right: 20px;
+  padding: 20px; }
+  @media (max-width: 767px) {
+    .chart {
+      margin-left: 70px; } }
 
 .container {
   width: 100%;
@@ -701,7 +716,11 @@ table > tbody > tr > td > .icon-links {
   padding-left: 15px;
   padding-right: 15px; }
 
-.links-table {
+.date-buttons {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e3e3e3; }
+
+.general-date {
   display: flex;
   background-color: white;
   flex-wrap: wrap;
@@ -710,6 +729,49 @@ table > tbody > tr > td > .icon-links {
   margin-right: 20px;
   border-bottom: 1px solid #e3e3e3;
   padding: 20px; }
+  .general-date img {
+    max-width: 800px;
+    object-fit: cover; }
+  @media (max-width: 767px) {
+    .general-date {
+      margin-left: 70px; }
+      .general-date btn {
+        justify-content: center; }
+      .general-date h1 {
+        color: #9c9c9c; }
+      .general-date img {
+        max-width: 400px;
+        object-fit: cover; } }
+  @media (min-width: 769px) and (max-width: 992px) {
+    .general-date img {
+      max-width: 700px;
+      object-fit: cover; } }
+
+.general-table {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 205px;
+  margin-right: 20px;
+  padding: 20px; }
+  @media (max-width: 767px) {
+    .general-table {
+      margin-left: 70px; }
+      .general-table btn {
+        justify-content: center; }
+      .general-table h1 {
+        color: #9c9c9c; } }
+
+.links-table {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 205px;
+  margin-right: 20px;
+  padding: 20px;
+  margin-bottom: 20px; }
   @media (max-width: 767px) {
     .links-table {
       margin-left: 70px; }
@@ -774,7 +836,8 @@ table > tbody > tr > td > .icon-links {
   margin-left: 50px;
   padding: 14px 22px;
   color: #ADADAD;
-  cursor: none; }
+  cursor: none;
+  display: inline-block; }
 
 .legend-div {
   border-radius: 50%;
@@ -792,12 +855,35 @@ table > tbody > tr > td > .icon-links {
 
 .legend3 {
   background: #59B76B;
-  margin-right: 5px; }
+  margin-right: 5px;
+  display: inline-block; }
 
 .legend3-div {
   padding-top: 19px;
   color: #57829e;
-  margin-left: 50px; }
+  margin-left: 50px;
+  display: inline-block; }
+
+.titlechart {
+  background-color: white;
+  color: #9c9c9c;
+  font-weight: bold; }
+
+tr {
+  display: table-row;
+  text-align: left; }
+
+.td-table {
+  text-align: end; }
+
+.hover {
+  text-align: center; }
+
+.center {
+  text-align: center; }
+
+.glyphicon-hover {
+  max-width: 800px; }
 
 * {
   font-family: "Roboto", sans-serif; }
