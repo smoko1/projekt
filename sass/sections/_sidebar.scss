@@ -127,10 +127,9 @@ $padding-left: 20px;
     }
     @media(max-width: 767px) {
         &.mobile-default {
-            @include short-menu()
+            @include short-menu();
         }
-      }
-    
+    }
 }
 
 

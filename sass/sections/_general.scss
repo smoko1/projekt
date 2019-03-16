@@ -1,9 +1,4 @@
 $boder-style: 1px solid #e3e3e3;
-.general-statistic {
-  border-bottom: $boder-style;
-  background-color: #F5F5F3;
-  text-align: left;
-}
 
 main {
   margin-bottom: 20px;
@@ -303,3 +298,56 @@ tr {
 .glyphicon-hover {
   max-width: 800px;
 }
+.top-bar1 {
+  display: none;
+  @media(max-width: 767px) {
+    display: block;
+    justify-content: flex-start;
+    border-bottom: $boder-style;
+    width: 100%;
+    background-color: #ffffff;
+    max-width: 700px;
+    padding-left: 10px;
+  }
+
+  .foot-btn {
+    background-color: #ffffff;
+    color: #9c9c9c;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    border-left: 1px solid #e3e3e3;
+  }
+
+  .indicator-footer {
+    @media(max-width: 767px) {
+      @include circle(9px);
+      background-color: orange;
+      display: inline-block;
+      position: absolute;
+    }
+  }
+}
+  span {
+    @media(max-width: 767px) {
+      margin: 0 15px;
+    }
+    &.amount {
+      @media(max-width: 767px) {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      &.username {
+          color: #56819f;
+          font-size: 13px;
+        }
+      }
+      .notification {
+        @media(max-width: 767px) {
+          position: relative;
+          display: block;
+        }
+      }
+    }
+
+
